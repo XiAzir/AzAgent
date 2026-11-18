@@ -1,11 +1,11 @@
 # 个人模式与 Web 交办任务
 
-本分支在上游 `deepseek-ai/dsh-superagent-prototype` 的基础上维护，保留原有
-Router、Worker、任务调度、会话恢复和工单记录，加入个人使用入口。
+AzAgent 的个人模式支持从 Web 交办任务，并使用 Router、Worker、任务调度、
+会话恢复和工单记录推进任务。
 
 ## 打开
 
-安装本分支的插件后，在 `dsh-superagent` 的机器配置中选择个人模式：
+安装 AzAgent 后，在 `dsh-superagent` 的机器配置中选择个人模式：
 
 ```yaml
 - id: dsh-superagent

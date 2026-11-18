@@ -1,8 +1,7 @@
-# Windows maintenance build
+# AzAgent on Windows
 
-This checkout carries local Windows compatibility changes on top of upstream commit
-`6337fc823ce20251c8de8085948165c81aaa701e`. Keep the patch when updating upstream; this
-is a locally maintained build of the research prototype.
+This guide covers installing and running AzAgent in a dedicated DeepSeek Harness
+profile on Windows.
 
 ## Requirements
 

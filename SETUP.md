@@ -1,6 +1,8 @@
 # SETUP
 
-Instructions for an agent that sets up dsh-superagent with its operator. If you are a person, ask your coding agent to read this file and follow it.
+Instructions for setting up AzAgent with its operator. Ask your coding agent to read this file and follow it.
+
+This release uses `dsh-superagent` for its package, plugin, and service commands, and **Superagent** for the Web sidebar entry.
 
 ## How to run the setup
 
