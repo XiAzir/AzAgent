@@ -1,30 +1,19 @@
-# dsh-superagent
+# AzAgent
 
-This fork adds **personal mode, a Web task inbox, Windows support, and a NapCat-based QQ Source** to the
-upstream research prototype. Repository mode remains available. Personal mode runs
-with a model and a local execution environment, and accepts tasks directly from
-the DSH Web panel. See [Personal mode](docs/personal.md) and
-[Windows setup](docs/windows.md). This publication also carries the same features with
-[Linux and CNB setup](docs/linux.md), a reproducible development image and Linux CI.
+AzAgent is an autonomous coding assistant maintained by XiAzir. It runs as an
+extension for [DeepSeek Harness](https://www.deepseek.com/en/harness/) on Windows
+and Linux. It accepts work from GitHub, Feishu, QQ through NapCat, and a personal
+Web task inbox. Each accepted task runs in its own agent session and working
+directory, and results go back to the original conversation.
 
-The `main` branch is a source-only publication based on the upstream prototype.
-It includes the latest maintained functionality with generic deployment examples.
-Operator-specific deployment records, accounts, credentials, runtime data and private
-development commit history are excluded from this publication. Configure your own
-CNB repository, domain and private environment before deploying; see
-[CNB hosting](deploy/cnb/README.md).
+The `main` branch publishes source code and generic deployment examples.
+For CNB, configure your own repository, domain, and private environment using
+the [CNB hosting guide](deploy/cnb/README.md).
 
-This fork also includes QQ file and visual-media input, immutable task artifacts,
-Router status replies, semantic QQ task routing and an external Watchdog. See
-[QQ / NapCat](docs/qq-napcat.md), [Watchdog](docs/watchdog.md), and the
-[article alignment audit](docs/article-alignment-audit.md) for implementation evidence,
-verification and deployment conditions.
-
-> **Research prototype for reference only, not an official DeepSeek product.** This code grew out of our team's day-to-day development work, with much of the engineering done by coding agents. Treat it as research code, not production-ready software. It may still contain bugs, and its coding style and engineering practices may be inconsistent. Review and adapt it before using it in your own environment.
->
-> We have adapted it for publication, so it is not identical to our internal version or the implementation described in *Exploring Super-agent Design: Towards a More Autonomous Agent System*. Some designs discussed in the article are directions for future development and are not implemented in this prototype.
-
-dsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for [DeepSeek Harness](https://www.deepseek.com/en/harness/). It listens to GitHub and, optionally, Feishu or QQ through NapCat's OneBot v11 interface. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.
+AzAgent supports QQ file and visual-media input, immutable task artifacts, status
+replies, semantic QQ task routing, and an external Watchdog. See
+[Personal mode](docs/personal.md), [QQ through NapCat](docs/qq-napcat.md), and
+[Watchdog](docs/watchdog.md) for setup and operation.
 
 It is also a way of working with an agent: **take as little human attention as possible, and give as much value as possible.** An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. [docs/000-philosophy.md](docs/000-philosophy.md) explains the principle and what it asks of the operator.
 
@@ -40,7 +29,7 @@ authorization, and first-task steps.
 
 Setup has many steps, so an agent does it with you. Ask your coding agent:
 
-> Read SETUP.md in this repository and set up dsh-superagent with me.
+> Read SETUP.md in this repository and set up AzAgent with me.
 
 It asks one short question at a time, shows the full plan once, and then installs and configures everything. [SETUP.md](SETUP.md) is what it follows.
 

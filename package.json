@@ -1,10 +1,14 @@
 {
   "name": "dsh-superagent",
-  "author": "DeepSeek Harness Team <team@dsh.dev>",
+  "author": "XiAzir",
   "license": "MIT",
   "version": "0.1.2-qq.1",
   "private": true,
-  "description": "A DSH agent with personal Web tasks, QQ and scheduled commands, maintained for Windows and Linux.",
+  "description": "AzAgent, an autonomous coding assistant for DeepSeek Harness with personal Web tasks, QQ and scheduled commands on Windows and Linux.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiAzir/AzAgent.git"
+  },
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
